@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NgdLesson1MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f373dcf59cfd76a2b5a188871988818e6fe730a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4340d2617c872ba3be22dc50a499e516d46f0db4")]
 [assembly: System.Reflection.AssemblyProductAttribute("NgdLesson1MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NgdLesson1MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
