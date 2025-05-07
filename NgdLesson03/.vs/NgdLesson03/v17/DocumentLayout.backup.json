@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\HocTap\\NetCOre\\NgdLesson03\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{230BE17C-39A5-494A-958C-2119CB7D2F89}|..\\NgdLesson03MVC\\NgdLesson03MVC.csproj|c:\\hoctap\\netcore\\ngdlesson03mvc\\views\\view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{230BE17C-39A5-494A-958C-2119CB7D2F89}|..\\NgdLesson03MVC\\NgdLesson03MVC.csproj|c:\\hoctap\\netcore\\ngdlesson03mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "View.cshtml",
+              "DocumentMoniker": "C:\\HocTap\\NetCOre\\NgdLesson03MVC\\Views\\View.cshtml",
+              "RelativeDocumentMoniker": "..\\NgdLesson03MVC\\Views\\View.cshtml",
+              "ToolTip": "C:\\HocTap\\NetCOre\\NgdLesson03MVC\\Views\\View.cshtml",
+              "RelativeToolTip": "..\\NgdLesson03MVC\\Views\\View.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T03:10:31.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\HocTap\\NetCOre\\NgdLesson03MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "..\\NgdLesson03MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\HocTap\\NetCOre\\NgdLesson03MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "..\\NgdLesson03MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T03:09:29.429Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
