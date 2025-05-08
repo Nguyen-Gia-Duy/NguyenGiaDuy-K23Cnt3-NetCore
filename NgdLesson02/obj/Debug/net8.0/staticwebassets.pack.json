@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\NgdLesson02.bundle.scp.css"
     },
     {
+      "Id": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NgdLesson02\\wwwroot\\Avatar\\xe1.jpg",
+      "PackagePath": "staticwebassets\\Avatar\\xe1.jpg"
+    },
+    {
+      "Id": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NgdLesson02\\wwwroot\\Avatar\\xe2.jpg",
+      "PackagePath": "staticwebassets\\Avatar\\xe2.jpg"
+    },
+    {
+      "Id": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NgdLesson02\\wwwroot\\Avatar\\xe3.jpg",
+      "PackagePath": "staticwebassets\\Avatar\\xe3.jpg"
+    },
+    {
+      "Id": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NgdLesson02\\wwwroot\\Avatar\\xe4.jpg",
+      "PackagePath": "staticwebassets\\Avatar\\xe4.jpg"
+    },
+    {
+      "Id": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NgdLesson02\\wwwroot\\Avatar\\xe5.jpg",
+      "PackagePath": "staticwebassets\\Avatar\\xe5.jpg"
+    },
+    {
       "Id": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NgdLesson02\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

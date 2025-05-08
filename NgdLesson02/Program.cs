@@ -21,7 +21,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=NgdHome}/{action=NgdIndex}/{id?}");
+    name: "account",
+    pattern: "{controller=NgdAccount}/{action=NgdIndex}/{id?}");
 
 app.Run();
