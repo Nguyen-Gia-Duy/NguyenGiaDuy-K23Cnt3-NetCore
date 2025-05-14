@@ -48,7 +48,7 @@ namespace NgdLesson02.Controllers
                 },
                  new NgdAccount
                 {
-                    Id = 3,
+                    Id = 4,
                     Name = "Chubby",
                     Email = "chubby001@example.com",
                     Phone = "0329939213",
@@ -60,7 +60,7 @@ namespace NgdLesson02.Controllers
                 },
                   new NgdAccount
                 {
-                    Id = 3,
+                    Id = 5,
                     Name = "Khanh Anh",
                     Email = "Khanh6@example.com",
                     Phone = "0329939",
@@ -119,7 +119,7 @@ namespace NgdLesson02.Controllers
                 },
                  new NgdAccount
                 {
-                    Id = 3,
+                    Id = 4,
                     Name = "Chubby",
                     Email = "chubby001@example.com",
                     Phone = "0329939213",
@@ -131,7 +131,7 @@ namespace NgdLesson02.Controllers
                 },
                   new NgdAccount
                 {
-                    Id = 3,
+                    Id = 5,
                     Name = "Khanh Anh",
                     Email = "Khanh6@example.com",
                     Phone = "0329939",

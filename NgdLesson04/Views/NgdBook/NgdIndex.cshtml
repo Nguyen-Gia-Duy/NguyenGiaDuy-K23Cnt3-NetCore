@@ -1,0 +1,34 @@
+﻿@model IEnumerable<NgdLesson04.Models.NgdBook>
+@{
+    ViewData["Title"] = "List Book ";
+}
+<h1>Thong tin cac cuon sach</h1>
+<a href="/ngdbook/ngdcreate" class="btn btn-primary">Them moi</a>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>BookId</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(NgdBook ngdItem in Model)
+        {
+            <tr> 
+                <td>@ngdItem.NgdId</td>
+                <td>@ngdItem.NgdTitle</td>
+                <td>@ngdItem.NgdDescription</td>
+                <td>
+                    <img src="@ngdItem.NgdImage" alt="@ngdItem.NgdTitle" style="width:100px; height:150px"/>
+                </td>
+                <td>@ngdItem.NgdPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
