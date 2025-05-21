@@ -25,7 +25,7 @@ namespace NgdLesson05.Controllers
             ngdMember.NgdMemberId=Guid.NewGuid().ToString();
             ngdMember.NgdUserName = "Nguyen Duy";
             ngdMember.NgdPassword = "123456@";
-            ngdMember.NgdFullName = "Nguyen Gia Duy";
+            ngdMember.NgdFullName = "Nguyen Gia Huy";
             ngdMember.NgdEmail = "duy@gmail.com";
             return View(ngdMember);
         }
