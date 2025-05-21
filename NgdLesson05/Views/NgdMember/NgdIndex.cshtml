@@ -1,0 +1,29 @@
+﻿@model IEnumerable<NgdLesson05.Models.DataModel.NgdMember>;
+@{
+    ViewData["Title"] = "NgdIndex";
+}
+
+<h1>Danh sach Member</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+           <th>Member Id</th>
+            <th>Member UserName</th>
+            <th>Member PassWord</th>
+            <th>Member FullName</th>
+            <th>Member Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var ngdItem in Model){
+            <tr>
+                <td>@ngdItem.NgdMemberId</td>
+                <td>@ngdItem.NgdUserName</td>
+                <td>@ngdItem.NgdPassword</td>
+                <td>@ngdItem.NgdFullName</td>
+                <td>@ngdItem.NgdEmail</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
