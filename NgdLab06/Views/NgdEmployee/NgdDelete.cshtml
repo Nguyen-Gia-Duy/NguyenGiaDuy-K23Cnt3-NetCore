@@ -11,7 +11,7 @@
         Bạn có chắc chắn muốn xóa nhân viên <strong>@Model.NgdName</strong> không?
     </div>
 
-    <form asp-action="NgdDelete" method="post">
+    <form asp-action="NgdDelete" asp-route-id="@Model.NgdId" method="post">
         <input asp-for="NgdId" type="hidden" />
         <button type="submit" class="btn btn-danger">Xóa</button>
         <a asp-action="NgdIndex" class="btn btn-secondary">Hủy</a>
