@@ -1,0 +1,48 @@
+﻿@model NgdLab06.Models.NgdEmployee
+
+@{
+    ViewData["Title"] = "Sửa nhân viên";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+    <form asp-action="NgdEdit" method="post">
+        <input asp-for="NgdId" type="hidden" />
+        
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="name-addon">Họ tên</span>
+            <input asp-for="NgdName" class="form-control" aria-describedby="name-addon" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="birthday-addon">Ngày sinh</span>
+            <input asp-for="NgdBirthDay" type="date" class="form-control" aria-describedby="birthday-addon" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="email-addon">Email</span>
+            <input asp-for="NgdEmail" class="form-control" placeholder="Email" aria-describedby="email-addon" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="phone-addon">📞</span>
+            <input asp-for="NgdPhone" class="form-control" placeholder="Số điện thoại" aria-describedby="phone-addon" />
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="salary-addon">Lương</span>
+            <input asp-for="NgdSalary" class="form-control" aria-describedby="salary-addon" />
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="status-select">Trạng thái</label>
+            <select asp-for="NgdStatus" class="form-select" id="status-select">
+                <option value="true" selected="@Model.NgdStatus == true">Đang làm</option>
+                <option value="false" selected="@Model.NgdStatus == false">Đã nghỉ</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success">Lưu lại</button>
+        <a asp-action="NgdIndex" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

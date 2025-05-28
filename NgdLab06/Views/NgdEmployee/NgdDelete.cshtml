@@ -1,0 +1,19 @@
+﻿@model NgdLab06.Models.NgdEmployee
+
+@{
+    ViewData["Title"] = "Xác nhận xóa nhân viên";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    <div class="alert alert-warning">
+        Bạn có chắc chắn muốn xóa nhân viên <strong>@Model.NgdName</strong> không?
+    </div>
+
+    <form asp-action="NgdDelete" method="post">
+        <input asp-for="NgdId" type="hidden" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="NgdIndex" class="btn btn-secondary">Hủy</a>
+    </form>
+</div>

@@ -66,8 +66,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T03:24:12.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T03:24:12.744Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "Views\\NgdMember\\NgdIndex.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T02:56:31.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T02:56:31.9Z"
             },
             {
               "$type": "Document",
@@ -92,8 +90,7 @@
               "RelativeToolTip": "Controllers\\NgdMemberController.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAAwA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:36:13.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T02:36:13.412Z"
             },
             {
               "$type": "Document",
@@ -105,8 +102,7 @@
               "RelativeToolTip": "Models\\DataModel\\NgdMember.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAvwAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:25:45.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T02:25:45.955Z"
             },
             {
               "$type": "Document",
@@ -155,8 +151,7 @@
               "RelativeToolTip": "Views\\NgdHome\\NgdIndex.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T02:10:16.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T02:10:16.834Z"
             },
             {
               "$type": "Document",
@@ -168,8 +163,7 @@
               "RelativeToolTip": "Controllers\\NgdHomeController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:08:20.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T02:08:20.179Z"
             },
             {
               "$type": "Document",
@@ -181,8 +175,7 @@
               "RelativeToolTip": "Views\\Shared\\_NgdLayout.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T02:06:29.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T02:06:29.27Z"
             },
             {
               "$type": "Document",
@@ -194,8 +187,7 @@
               "RelativeToolTip": "Views\\Shared\\_NgdNavBar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-21T02:05:30.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-21T02:05:30.974Z"
             }
           ]
         }
