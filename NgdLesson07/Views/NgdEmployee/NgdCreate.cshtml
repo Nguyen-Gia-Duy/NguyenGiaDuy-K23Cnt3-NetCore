@@ -1,0 +1,60 @@
+﻿@model NgdLesson07.Models.NgdEmployee
+
+@{
+    ViewData["Title"] = "Them Moi Nhan Vien";
+}
+
+<h1>Them Moi Nhan Vien</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NgdCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NgdId" class="control-label"></label>
+                <input asp-for="NgdId" class="form-control" />
+                <span asp-validation-for="NgdId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdName" class="control-label"></label>
+                <input asp-for="NgdName" class="form-control" />
+                <span asp-validation-for="NgdName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdBirthDay" class="control-label"></label>
+                <input asp-for="NgdBirthDay" class="form-control" />
+                <span asp-validation-for="NgdBirthDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdEmail" class="control-label"></label>
+                <input asp-for="NgdEmail" class="form-control" />
+                <span asp-validation-for="NgdEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdPhone" class="control-label"></label>
+                <input asp-for="NgdPhone" class="form-control" />
+                <span asp-validation-for="NgdPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdSalary" class="control-label"></label>
+                <input asp-for="NgdSalary" class="form-control" />
+                <span asp-validation-for="NgdSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="NgdStatus" /> @Html.DisplayNameFor(model => model.NgdStatus)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="NgdIndex">Back to List</a>
+</div>
+

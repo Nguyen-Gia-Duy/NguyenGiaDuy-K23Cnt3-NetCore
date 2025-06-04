@@ -76,6 +76,10 @@ namespace NgdLab06.Controllers
         // GET: Xác nhận xóa
         public IActionResult NgdDelete(int id)
         {
+            if (id <= 0)
+            {
+                return RedirectToAction("NgdIndex");
+            }
             var employee = ngdListEmployee.FirstOrDefault(e => e.NgdId == id);
             if (employee == null)
             {

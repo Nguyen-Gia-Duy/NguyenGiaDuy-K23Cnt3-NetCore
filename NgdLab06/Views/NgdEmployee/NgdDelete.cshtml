@@ -1,19 +1,30 @@
 ﻿@model NgdLab06.Models.NgdEmployee
-
 @{
     ViewData["Title"] = "Xác nhận xóa nhân viên";
 }
-
 <div class="container mt-4">
     <h2 class="mb-4">@ViewData["Title"]</h2>
-
     <div class="alert alert-warning">
-        Bạn có chắc chắn muốn xóa nhân viên <strong>@Model.NgdName</strong> không?
+        <strong>Bạn có chắc chắn muốn xóa nhân viên "@Model.NgdName" không?</strong>
     </div>
 
+<<<<<<< HEAD
     <form asp-action="NgdDelete" asp-route-id="@Model.NgdId" method="post">
         <input asp-for="NgdId" type="hidden" />
         <button type="submit" class="btn btn-danger">Xóa</button>
+=======
+    <dl class="row">
+        <dt class="col-sm-3">Email</dt>
+        <dd class="col-sm-9">@Model.NgdEmail</dd>
+
+        <dt class="col-sm-3">Số điện thoại</dt>
+        <dd class="col-sm-9">@Model.NgdPhone</dd>
+    </dl>
+
+    <form asp-action="NgdDelete" asp-route-id="@Model.NgdId" method="post">
+        <input type="hidden" asp-for="NgdId" />
+        <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+>>>>>>> 5830a3e (NgdLesson07)
         <a asp-action="NgdIndex" class="btn btn-secondary">Hủy</a>
     </form>
 </div>
