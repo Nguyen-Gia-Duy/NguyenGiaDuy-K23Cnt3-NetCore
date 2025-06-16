@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\NgdLesson01.props" />
-</Project>
