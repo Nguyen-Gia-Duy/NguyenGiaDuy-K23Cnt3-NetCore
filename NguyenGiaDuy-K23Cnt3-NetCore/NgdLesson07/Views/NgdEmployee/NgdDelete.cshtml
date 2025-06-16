@@ -1,0 +1,62 @@
+﻿@model NgdLesson07.Models.NgdEmployee
+
+@{
+    ViewData["Title"] = "Xoa Nhan vien";
+}
+
+<h1>Xoa Nhan vien</h1>
+
+<h3>Ban chac chan muon xoa nhan vien nay?</h3>
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2" >
+            @Html.DisplayNameFor(model => model.NgdId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdBirthDay)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdBirthDay)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdPhone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdPhone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdSalary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdSalary)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdStatus)
+        </dd>
+    </dl>
+    
+    <form asp-action="NgdDelete" method="post">
+        <input type="submit" value="Xoa" class="btn btn-danger" /> |
+        <a asp-action="NgdIndex">Back to List</a>
+    </form>
+</div>

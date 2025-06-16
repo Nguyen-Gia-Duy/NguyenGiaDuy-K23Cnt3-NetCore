@@ -1,0 +1,52 @@
+﻿@model NgdLesson04.Models.NgdBook
+@{
+    ViewData["Title"] = "Them moi sach";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-action="NgdCreateSubmit" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="NgdId"></label>
+        <input asp-for="NgdId" class="form-control" />
+        <span asp-validation-for="NgdId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NgdTitle"></label>
+        <input asp-for="NgdTitle" class="form-control" />
+        <span asp-validation-for="NgdTitle" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NgdDescription"></label>
+        <textarea asp-for="NgdDescription" class="form-control"></textarea>
+        <span asp-validation-for="NgdDescription" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NgdImage"></label>
+        <input asp-for="NgdImage" class="form-control" type="file" />
+        <span asp-validation-for="NgdImage" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NgdPrice"></label>
+        <input asp-for="NgdPrice" class="form-control" />
+        <span asp-validation-for="NgdPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NgdPage"></label>
+        <input asp-for="NgdPage" class="form-control" />
+        <span asp-validation-for="NgdPage" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Thêm sách</button>
+    <a asp-action="NgdIndex" class="btn btn-secondary">Hủy</a>
+    </form>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+

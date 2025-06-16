@@ -1,0 +1,89 @@
+﻿    @model IEnumerable<NgdLesson08.Models.NgdAccount>
+
+@{
+    ViewData["Title"] = "NgdIndex";
+}
+
+<h1>NgdIndex</h1>
+
+<p>
+    <a asp-action="NgdCreate" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdFullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdAvatar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdBirthday)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdPassword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdFacebook)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdFullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdAvatar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdBirthday)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdFacebook)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

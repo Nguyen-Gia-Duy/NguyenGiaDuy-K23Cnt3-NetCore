@@ -1,0 +1,78 @@
+﻿@model NgdLesson08.Models.NgdAccount
+
+@{
+    ViewData["Title"] = "NgdCreate";
+}
+
+<h1>NgdCreate</h1>
+
+<h4>NgdAccount</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NgdCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NgdId" class="control-label"></label>
+                <input asp-for="NgdId" class="form-control" />
+                <span asp-validation-for="NgdId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdFullName" class="control-label"></label>
+                <input asp-for="NgdFullName" class="form-control" />
+                <span asp-validation-for="NgdFullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdEmail" class="control-label"></label>
+                <input asp-for="NgdEmail" class="form-control" />
+                <span asp-validation-for="NgdEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdPhone" class="control-label"></label>
+                <input asp-for="NgdPhone" class="form-control" />
+                <span asp-validation-for="NgdPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdAddress" class="control-label"></label>
+                <input asp-for="NgdAddress" class="form-control" />
+                <span asp-validation-for="NgdAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdAvatar" class="control-label"></label>
+                <input asp-for="NgdAvatar" class="form-control" />
+                <span asp-validation-for="NgdAvatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdBirthday" class="control-label"></label>
+                <input asp-for="NgdBirthday" class="form-control" />
+                <span asp-validation-for="NgdBirthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdGender" class="control-label"></label>
+                <input asp-for="NgdGender" class="form-control" />
+                <span asp-validation-for="NgdGender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdPassword" class="control-label"></label>
+                <input asp-for="NgdPassword" class="form-control" />
+                <span asp-validation-for="NgdPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdFacebook" class="control-label"></label>
+                <input asp-for="NgdFacebook" class="form-control" />
+                <span asp-validation-for="NgdFacebook" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
