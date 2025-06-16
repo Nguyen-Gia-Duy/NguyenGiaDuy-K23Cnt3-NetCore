@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using NgdLesson09.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("NgdBookStore");
+builder.Services.AddDbContext<NgdBookStoreContext>(x => x.UseSqlServer(connectionString)); 
 
 var app = builder.Build();
 
