@@ -1,0 +1,71 @@
+﻿@model IEnumerable<NgdLesson07.Models.NgdEmployee>
+
+@{
+    ViewData["Title"] = "DANH SACH NHAN VIEN ";
+}
+
+<h1>DANH SACH NHAN VIEN</h1>
+
+<p>
+    <a asp-action="NgdCreate" class="btn btn-primary">Them moi</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdBirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdBirthDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdStatus)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "NgdEdit", new { id=item.NgdId  }) |
+                    @Html.ActionLink("Details", "NgdDetails", new { id = item.NgdId }) |
+                    @Html.ActionLink("Delete", "NgdDelete", new { id = item.NgdId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

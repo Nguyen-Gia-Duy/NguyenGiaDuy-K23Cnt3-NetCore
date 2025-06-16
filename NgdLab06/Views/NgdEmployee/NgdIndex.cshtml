@@ -1,0 +1,48 @@
+﻿@model IEnumerable<NgdLab06.Models.NgdEmployee>
+
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="text-center mb-4">Danh sách nhân viên</h2>
+        <a href="/NgdEmployee/NgdCreate" class="btn btn-primary">Thêm mới</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Lương</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th> <!-- Cột hành động -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ngdEmp in Model)
+            {
+                <tr>
+                    <td class="text-center">@ngdEmp.NgdId</td>
+                    <td>@ngdEmp.NgdName</td>
+                    <td class="text-center">@ngdEmp.NgdBirthDay.ToString("dd/MM/yyyy")</td>
+                    <td>@ngdEmp.NgdEmail</td>
+                    <td>@ngdEmp.NgdPhone</td>
+                    <td class="text-end">@ngdEmp.NgdSalary.ToString("N0")</td>
+                    <td class="text-center">
+                        @(ngdEmp.NgdStatus ? "Đang làm" : "Đã nghỉ")
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="NgdEdit" asp-route-id="@ngdEmp.NgdId" class="btn btn-sm btn-warning">Sửa</a>
+                        <a asp-action="NgdDelete" asp-route-id="@ngdEmp.NgdId" class="btn btn-sm btn-danger"
+                           onclick="return confirm('Bạn có chắc muốn xóa nhân viên này không?');">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
