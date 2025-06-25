@@ -1,0 +1,54 @@
+﻿@model IEnumerable<NgdLesson10bai1.Models.Category>
+
+@{
+    ViewData["Title"] = "Danh muc loai";
+}
+
+<h1>@ViewData["Title"] </h1>
+
+<p>
+    <a asp-action="NgdCreate" class="btn btn-primary">Them moi</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CateId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CateName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CateStatus)
+            </th>
+            <th>Chuc nang</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.CateId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CateName)
+            </td>
+            <td>
+                @if(item.CateStatus==true)
+                {
+                        <text>Hien thi</text>
+                }else
+                {
+                    <text>Tam khoa</text>
+                }
+             
+            </td>
+            <td>
+                    <a asp-action="NgdEdit" asp-route-ngdId="@item.CateId">Edit</a> |
+                    <a asp-action="NgdDetails" asp-route-ngdId="@item.CateId">Details</a> |
+                    <a asp-action="NgdDelete" asp-route-ngdId="@item.CateId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

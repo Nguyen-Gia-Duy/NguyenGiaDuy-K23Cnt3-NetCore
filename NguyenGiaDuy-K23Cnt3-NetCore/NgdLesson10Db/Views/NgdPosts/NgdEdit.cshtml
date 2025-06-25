@@ -1,0 +1,46 @@
+﻿@model NgdLesson10Db.Models.NgdPost
+
+@{
+    ViewData["Title"] = "Chinh sua bai viet";
+}
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NgdEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NgdId" />
+            <div class="form-group">
+                <label asp-for="NgdTitle" class="control-label"></label>
+                <input asp-for="NgdTitle" class="form-control" />
+                <span asp-validation-for="NgdTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdImage" class="control-label"></label>
+                <input asp-for="NgdImage" class="form-control"type="file" />
+                <span asp-validation-for="NgdImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdContent" class="control-label"></label>
+                <input asp-for="NgdContent" class="form-control" />
+                <span asp-validation-for="NgdContent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdStatus" class="control-label"></label>
+                <input asp-for="NgdStatus" class="form-control" />
+                <span asp-validation-for="NgdStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Luu lai" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="NgdIndex">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

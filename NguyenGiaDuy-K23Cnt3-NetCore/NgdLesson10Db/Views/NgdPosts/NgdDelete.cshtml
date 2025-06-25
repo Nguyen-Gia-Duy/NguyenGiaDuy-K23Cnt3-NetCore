@@ -1,0 +1,45 @@
+﻿@model NgdLesson10Db.Models.NgdPost
+
+@{
+    ViewData["Title"] = "Xoa bai viet";
+}
+
+
+
+<h3>Ban chac cahn muon xoa?</h3>
+<div>
+    <h4>NgdPost</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdTitle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdTitle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdImage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdImage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdContent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdContent)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdStatus)
+        </dd>
+    </dl>
+    
+    <form asp-action="NgdDelete">
+        <input type="hidden" asp-for="NgdId" />
+        <input type="submit" value="NgdDelete" class="btn btn-danger" /> |
+        <a asp-action="NgdIndex">Back to List</a>
+    </form>
+</div>

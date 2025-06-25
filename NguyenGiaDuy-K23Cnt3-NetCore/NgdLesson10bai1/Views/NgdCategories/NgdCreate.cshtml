@@ -1,0 +1,49 @@
+﻿@model NgdLesson10bai1.Models.Category
+
+@{
+    ViewData["Title"] = "Them moi danh muc loai";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="NgdCreate">
+            <div class="card">
+                <div class="card-header">
+                    <h1>@ViewData["Title"]</h1>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                </div>
+                <div class="card-body">
+                    <div class="form-group mb-3">
+                        <label asp-for="CateName" class="control-label"></label>
+                        <input asp-for="CateName" class="form-control" />
+                        <span asp-validation-for="CateName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check mb-3">
+                        
+                        <input type="hidden" name="CateStatus" value="false" />
+                        <input type="checkbox" name="CateStatus" class="form-check-input" id="CateStatus" value="true" />
+                        <label class="form-check-label" for="CateStatus">Trạng thái</label>
+
+                        <span asp-validation-for="CateStatus" class="text-danger"></span>
+                    </div>
+
+
+
+                </div>
+                <div class="card-footer text-end">
+                    <input type="submit" value="Ghi Lại" class="btn btn-primary" />
+                    <a asp-action="NgdIndex" class="btn btn-secondary ms-2">Quay Về</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

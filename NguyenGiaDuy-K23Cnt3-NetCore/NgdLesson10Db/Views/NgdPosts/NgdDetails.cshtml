@@ -1,0 +1,39 @@
+﻿@model NgdLesson10Db.Models.NgdPost
+
+@{
+    ViewData["Title"] = "Xem bai viet";
+}
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdTitle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdTitle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdImage)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdImage)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdContent)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdContent)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdStatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="NgdEdit" asp-route-ngdId="@Model?.NgdId">Edit</a> |
+    <a asp-action="NgdIndex">Back to List</a>
+</div>

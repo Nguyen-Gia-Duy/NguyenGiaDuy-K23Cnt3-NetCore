@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NgdLesson10bai1.props" />
+</Project>

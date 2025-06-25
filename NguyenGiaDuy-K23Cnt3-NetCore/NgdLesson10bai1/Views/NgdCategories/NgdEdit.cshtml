@@ -1,0 +1,40 @@
+﻿@model NgdLesson10bai1.Models.Category
+
+@{
+    ViewData["Title"] = "Chinh sua thong tin";
+}
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NgdEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CateId" />
+            <div class="form-group">
+                <label asp-for="CateName" class="control-label"></label>
+                <input asp-for="CateName" class="form-control" />
+                <span asp-validation-for="CateName" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check mb-3">
+                <input type="hidden" asp-for="CateStatus" value="false" />
+                <input asp-for="CateStatus" class="form-check-input" />
+                <label asp-for="CateStatus" class="form-check-label">Trạng thái</label>
+                <span asp-validation-for="CateStatus" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="NgdIndex">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
