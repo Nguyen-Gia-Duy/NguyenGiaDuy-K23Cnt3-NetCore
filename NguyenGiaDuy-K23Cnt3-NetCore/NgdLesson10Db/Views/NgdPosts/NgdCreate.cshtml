@@ -4,7 +4,7 @@
     ViewData["Title"] = "Thêm mới bài viết";
 }
 
-<div class="card shadow-sm mx-auto mt-4" style="max-width: 600px;">
+<div class="card shadow-sm mx-auto mt-4" style="max-width: 200px;">
     <div class="card-header">
         <h1 class="h4 mb-0">@ViewData["Title"]</h1>
     </div>
@@ -20,7 +20,7 @@
 
             <div class="mb-3">
                 <label asp-for="NgdImage" class="form-label"></label>
-                <input asp-for="NgdImage" class="form-control" type="file" />
+                <input name="NgdImage" class="form-control" type="file" />
                 <span asp-validation-for="NgdImage" class="text-danger"></span>
             </div>
 
@@ -39,7 +39,6 @@
                 </select>
                 <span asp-validation-for="NgdStatus" class="text-danger"></span>
             </div>
-
 
             <div class="d-flex justify-content-between">
                 <a asp-action="NgdIndex" class="btn btn-secondary">Quay lại</a>

@@ -59,13 +59,14 @@ namespace NgdLesson10Db.Controllers
             {
                 if (NgdImage != null && NgdImage.Length > 0)
                 {
-                   
+                   //Tao ten fole duy nhat de tranh trung lap
                     var fileName = Path.GetFileNameWithoutExtension(NgdImage.FileName);
                     var extension = Path.GetExtension(NgdImage.FileName);
 
                     var newFileName = $"{fileName}_{DateTime.Now:yyyyMMddHHmmss}{extension}";
 
                     var path=Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images",newFileName);
+                    //Luu vao file thu muc
                     using (var stream = new FileStream(path, FileMode.Create))
                     {
                         await NgdImage.CopyToAsync(stream);
@@ -103,7 +104,7 @@ namespace NgdLesson10Db.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> NgdEdit(int ngdId, [Bind("NgdId,NgdTitle,NgdImage,NgdContent,NgdStatus")] NgdPost ngdPost)
+        public async Task<IActionResult> NgdEdit(int ngdId, [Bind("NgdId,NgdTitle,NgdImage,NgdContent,NgdStatus")] NgdPost ngdPost, IFormFile NgdImage)
         {
             if (ngdId != ngdPost.NgdId)
             {
@@ -114,6 +115,26 @@ namespace NgdLesson10Db.Controllers
             {
                 try
                 {
+                    if (NgdImage != null && NgdImage.Length > 0)
+                    {
+                        var fileName = Path.GetFileNameWithoutExtension(NgdImage.FileName);
+                        var extension = Path.GetExtension(NgdImage.FileName);
+                        var newFileName = $"{fileName}_{DateTime.Now:yyyyMMddHHmmss}{extension}";
+
+                        var folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+                        if (!Directory.Exists(folderPath))
+                            Directory.CreateDirectory(folderPath);
+
+                        var path = Path.Combine(folderPath, newFileName);
+
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            await NgdImage.CopyToAsync(stream);
+                        }
+
+                        ngdPost.NgdImage = "images/" + newFileName;
+                    }
+
                     _context.Update(ngdPost);
                     await _context.SaveChangesAsync();
                 }

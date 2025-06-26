@@ -1,46 +1,65 @@
 ﻿@model NgdLesson10Db.Models.NgdPost
 
 @{
-    ViewData["Title"] = "Chinh sua bai viet";
+    ViewData["Title"] = "Chỉnh sửa bài viết";
 }
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="NgdEdit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="card shadow-sm mx-auto mt-4" style="max-width: 200px;">
+    <div class="card-header">
+        <h1 class="h4 mb-0">@ViewData["Title"]</h1>
+    </div>
+
+    <div class="card-body">
+        <form asp-action="NgdEdit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
             <input type="hidden" asp-for="NgdId" />
-            <div class="form-group">
-                <label asp-for="NgdTitle" class="control-label"></label>
+
+            <div class="mb-3">
+                <label asp-for="NgdTitle" class="form-label"></label>
                 <input asp-for="NgdTitle" class="form-control" />
                 <span asp-validation-for="NgdTitle" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="NgdImage" class="control-label"></label>
-                <input asp-for="NgdImage" class="form-control"type="file" />
-                <span asp-validation-for="NgdImage" class="text-danger"></span>
+
+            <div class="mb-3">
+                <label class="form-label">Ảnh hiện tại</label><br />
+                @if (!string.IsNullOrEmpty(Model.NgdImage))
+                {
+                    <img src="~/images/@Model.NgdImage" alt="Ảnh hiện tại" style="max-height: 150px;" class="mb-2" />
+                }
             </div>
-            <div class="form-group">
-                <label asp-for="NgdContent" class="control-label"></label>
-                <input asp-for="NgdContent" class="form-control" />
+
+            <div class="mb-3">
+                <label class="form-label">Chọn ảnh mới (nếu muốn thay)</label>
+                <input name="NgdImage" type="file" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="NgdContent" class="form-label"></label>
+                <textarea asp-for="NgdContent" class="form-control" rows="5"></textarea>
                 <span asp-validation-for="NgdContent" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="NgdStatus" class="control-label"></label>
-                <input asp-for="NgdStatus" class="form-control" />
+
+            <div class="mb-3">
+                <label asp-for="NgdStatus" class="form-label">Trạng thái</label>
+                <select asp-for="NgdStatus" class="form-select">
+                    <option value="">-- Chọn trạng thái --</option>
+                    <option value="false" selected="@(!Model.NgdStatus ?? false)">Tạm ẩn</option>
+                    <option value="true" selected="@(Model.NgdStatus ?? false)">Hiển thị</option>
+                </select>
                 <span asp-validation-for="NgdStatus" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Luu lai" class="btn btn-primary" />
+
+            <div class="d-flex justify-content-between">
+                <a asp-action="NgdIndex" class="btn btn-secondary">Quay lại</a>
+                <button type="submit" class="btn btn-primary">Lưu lại</button>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="NgdIndex">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
