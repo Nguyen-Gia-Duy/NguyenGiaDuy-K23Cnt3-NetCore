@@ -1,0 +1,45 @@
+﻿@model NguyenGiaDuy_2310900031.Models.NgdEmployee
+
+@{
+    ViewData["Title"] = "Xoa nhan vien";
+}
+
+<h1>Xoa nhan vien</h1>
+
+<h3>Ban chac chan muon xoa nhan vien nay?</h3>
+<div>
+    <h4>NgdEmployee</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmpName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmpName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmpLevel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmpLevel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmpStartDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmpStartDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmpStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmpStatus)
+        </dd>
+    </dl>
+    
+    <form asp-action="NgdDelete">
+        <input type="hidden" asp-for="NgdEmpId" />
+        <input type="submit" value="NgdDelete" class="btn btn-danger" /> |
+        <a asp-action="NgdIndex">Back to List</a>
+    </form>
+</div>

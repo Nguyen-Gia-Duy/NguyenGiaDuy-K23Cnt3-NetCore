@@ -17,7 +17,7 @@
             @Html.DisplayNameFor(model => model.NgdImage)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NgdImage)
+            <img src="@Url.Content("~/" + Model.NgdImage)" style="width:50px" />
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.NgdContent)

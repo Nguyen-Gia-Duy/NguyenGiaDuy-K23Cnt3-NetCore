@@ -1,0 +1,75 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NguyenGiaDuy_2310900031
+build_property.RootNamespace = NguyenGiaDuy_2310900031
+build_property.ProjectDir = C:\HocTap\NetCOre\NguyenGiaDuy-K23Cnt3-NetCore\NguyenGiaDuy_2310900031\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\HocTap\NetCOre\NguyenGiaDuy-K23Cnt3-NetCore\NguyenGiaDuy_2310900031
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/NgdEmployees/NgdCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdkRW1wbG95ZWVzXE5nZENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/NgdEmployees/NgdDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdkRW1wbG95ZWVzXE5nZERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/NgdEmployees/NgdDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdkRW1wbG95ZWVzXE5nZERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/NgdEmployees/NgdEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdkRW1wbG95ZWVzXE5nZEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/NgdEmployees/NgdIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdkRW1wbG95ZWVzXE5nZEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/NgdHome/NgdIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdkSG9tZVxOZ2RJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/NgdHome/NgdPrivacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdkSG9tZVxOZ2RQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/HocTap/NetCOre/NguyenGiaDuy-K23Cnt3-NetCore/NguyenGiaDuy_2310900031/Views/Shared/_NgdLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OZ2RMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-knj3r478o7

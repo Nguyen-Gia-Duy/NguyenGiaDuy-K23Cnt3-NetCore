@@ -1,0 +1,56 @@
+﻿@model NguyenGiaDuy_2310900031.Models.NgdEmployee
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<h4>NgdEmployee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="NgdEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NgdEmpId" />
+
+            <div class="form-group mb-2">
+                <label asp-for="NgdEmpName" class="control-label"></label>
+                <input asp-for="NgdEmpName" class="form-control" />
+                <span asp-validation-for="NgdEmpName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="NgdEmpLevel" class="control-label"></label>
+                <input asp-for="NgdEmpLevel" class="form-control" />
+                <span asp-validation-for="NgdEmpLevel" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="NgdEmpStartDate" class="control-label"></label>
+                <input asp-for="NgdEmpStartDate" class="form-control" type="date" />
+                <span asp-validation-for="NgdEmpStartDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="NgdEmpStatus" class="control-label"></label>
+                <select asp-for="NgdEmpStatus" class="form-control">
+                    <option value="">-- Chọn trạng thái --</option>
+                    <option value="true" selected="@(Model?.NgdEmpStatus == true)">Show</option>
+                    <option value="false" selected="@(Model?.NgdEmpStatus == false)">Hide</option>
+                </select>
+                <span asp-validation-for="NgdEmpStatus" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Ghi lại" class="btn btn-primary" />
+                <a asp-action="NgdIndex" class="btn btn-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

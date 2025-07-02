@@ -1,0 +1,42 @@
+﻿@model NguyenGiaDuy_2310900031.Models.NgdEmployee
+
+@{
+    ViewData["Title"] = "Xem thong tin";
+}
+
+<h1>Xem thong tin</h1>
+
+<div>
+    <h4>NgdEmployee</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmpName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmpName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmpLevel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmpLevel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmpStartDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmpStartDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdEmpStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdEmpStatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="NgdEdit" asp-route-id="@Model?.NgdEmpId">Edit</a> |
+    <a asp-action="NgdIndex">Back to List</a>
+</div>
