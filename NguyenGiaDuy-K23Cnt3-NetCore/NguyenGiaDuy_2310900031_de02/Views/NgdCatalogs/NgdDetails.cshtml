@@ -1,0 +1,38 @@
+﻿@model NguyenGiaDuy_2310900031_de02.Models.NgdCatalog
+
+@{
+    ViewData["Title"] = "Xem thong tin";
+}
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdCateName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdCateName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdCatePrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdCatePrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdCateQty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdCateQty)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgdCateActive)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgdCateActive)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="NgdEdit" asp-route-ngdId="@Model?.NgdCateId" class="btn btn-danger">Chinh sua</a> |
+    <a asp-action="NgdIndex" class="btn btn-success">Back to List</a>
+</div>

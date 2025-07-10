@@ -1,0 +1,49 @@
+﻿@model NguyenGiaDuy_2310900031_de02.Models.NgdCatalog
+
+@{
+    ViewData["Title"] = "Chinh sua thong tin";
+}
+<div class="card shadow-sm mx-auto mt-4" style="max-width: 200px;">
+    <div class="card-header">
+        <h1 class="h4 mb-0">@ViewData["Title"]</h1>
+    </div>
+
+    <div class="card-body">
+        <form asp-action="NgdEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="NgdCateId" />
+            <div class="form-group">
+                <label asp-for="NgdCateName" class="control-label"></label>
+                <input asp-for="NgdCateName" class="form-control" />
+                <span asp-validation-for="NgdCateName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdCatePrice" class="control-label"></label>
+                <input asp-for="NgdCatePrice" class="form-control" />
+                <span asp-validation-for="NgdCatePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NgdCateQty" class="control-label"></label>
+                <input asp-for="NgdCateQty" class="form-control" />
+                <span asp-validation-for="NgdCateQty" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="NgdCateActive" class="form-label">Trạng thái</label>
+                <select asp-for="NgdCateActive" class="form-select">
+                    <option value="">-- Chọn trạng thái --</option>
+                    <option value="false" selected="@(!Model.NgdCateActive ?? false)">Non-Active</option>
+                    <option value="true" selected="@(Model.NgdCateActive ?? false)">Active</option>
+                </select>
+                <span asp-validation-for="NgdCateActive" class="text-danger"></span>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a asp-action="NgdIndex" class="btn btn-secondary">Quay lại</a>
+                <button type="submit" class="btn btn-primary">Lưu lại</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

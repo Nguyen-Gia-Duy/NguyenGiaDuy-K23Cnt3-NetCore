@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\views\\ngdemployees\\ngdedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|solutionrelative:views\\ngdemployees\\ngdedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\controllers\\ngdemployeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|solutionrelative:controllers\\ngdemployeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\views\\ngdemployees\\ngdcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|solutionrelative:views\\ngdemployees\\ngdcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\views\\ngdemployees\\ngdindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|solutionrelative:views\\ngdemployees\\ngdindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\views\\ngdemployees\\ngdcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|solutionrelative:views\\ngdemployees\\ngdcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\views\\ngdemployees\\ngdedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|solutionrelative:views\\ngdemployees\\ngdedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\views\\ngdemployees\\ngddelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\controllers\\ngdemployeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|solutionrelative:controllers\\ngdemployeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1045DE-8331-4A5A-BA2E-8B2DC6EA2850}|NguyenGiaDuy_2310900031.csproj|c:\\hoctap\\netcore\\nguyengiaduy-k23cnt3-netcore\\nguyengiaduy_2310900031\\controllers\\ngdhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -62,18 +62,17 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T02:43:59.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T02:43:59.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "NgdEmployeesController.cs",
               "DocumentMoniker": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Controllers\\NgdEmployeesController.cs",
               "RelativeDocumentMoniker": "Controllers\\NgdEmployeesController.cs",
               "ToolTip": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Controllers\\NgdEmployeesController.cs",
               "RelativeToolTip": "Controllers\\NgdEmployeesController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAswD8AAABNAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowD8AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-02T02:41:07.599Z",
               "EditorCaption": ""
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Controllers\\NgdHomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T02:41:05.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T02:41:05.256Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Models\\NgdEmployee.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T02:38:46.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T02:38:46.724Z"
             },
             {
               "$type": "Document",
@@ -114,25 +111,24 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T02:38:43.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T02:38:43.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "NgdCreate.cshtml",
               "DocumentMoniker": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Views\\NgdEmployees\\NgdCreate.cshtml",
               "RelativeDocumentMoniker": "Views\\NgdEmployees\\NgdCreate.cshtml",
               "ToolTip": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Views\\NgdEmployees\\NgdCreate.cshtml",
               "RelativeToolTip": "Views\\NgdEmployees\\NgdCreate.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-02T02:34:32.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "NgdDelete.cshtml",
               "DocumentMoniker": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Views\\NgdEmployees\\NgdDelete.cshtml",
               "RelativeDocumentMoniker": "Views\\NgdEmployees\\NgdDelete.cshtml",
@@ -140,12 +136,11 @@
               "RelativeToolTip": "Views\\NgdEmployees\\NgdDelete.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T02:34:27.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T02:34:27.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "NgdDetails.cshtml",
               "DocumentMoniker": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Views\\NgdEmployees\\NgdDetails.cshtml",
               "RelativeDocumentMoniker": "Views\\NgdEmployees\\NgdDetails.cshtml",
@@ -153,31 +148,29 @@
               "RelativeToolTip": "Views\\NgdEmployees\\NgdDetails.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T02:34:19.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T02:34:19.059Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "NgdEdit.cshtml",
               "DocumentMoniker": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Views\\NgdEmployees\\NgdEdit.cshtml",
               "RelativeDocumentMoniker": "Views\\NgdEmployees\\NgdEdit.cshtml",
               "ToolTip": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Views\\NgdEmployees\\NgdEdit.cshtml",
               "RelativeToolTip": "Views\\NgdEmployees\\NgdEdit.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAiwCgAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwCgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-02T02:31:59.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T02:31:59.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NgdIndex.cshtml",
               "DocumentMoniker": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Views\\NgdEmployees\\NgdIndex.cshtml",
               "RelativeDocumentMoniker": "Views\\NgdEmployees\\NgdIndex.cshtml",
               "ToolTip": "C:\\HocTap\\NetCOre\\NguyenGiaDuy-K23Cnt3-NetCore\\NguyenGiaDuy_2310900031\\Views\\NgdEmployees\\NgdIndex.cshtml",
               "RelativeToolTip": "Views\\NgdEmployees\\NgdIndex.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAiwCcAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwDAAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-02T02:30:50.549Z",
               "EditorCaption": ""

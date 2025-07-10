@@ -1,0 +1,62 @@
+﻿@model IEnumerable<NguyenGiaDuy_2310900031_de02.Models.NgdCatalog>
+
+@{
+    ViewData["Title"] = "NgdCatalogs";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-2">
+    <h1>@ViewData["Title"]</h1>
+    <p>
+        <a asp-action="NgdCreate" class="btn btn-primary">Them moi</a>
+    </p>
+</div>
+<table class="table table-bordered ">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdCateName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdCatePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdCateQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgdCateActive)
+            </th>
+            <th>Chuc nang</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdCateName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdCatePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NgdCateQty)
+            </td>
+                <td class="d-flex justify-content-between align-items-center">
+
+                    @if (item.NgdCateActive == true)
+                    {
+                        <span class="badge bg-success">Active</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Non-Active</span>
+                    }
+                </td>
+            <td>
+                    <a asp-action="NgdEdit" asp-route-ngdId="@item.NgdCateId" class="btn btn-success btn-sm ">Sua</a> |
+                    <a asp-action="NgdDetails" asp-route-ngdId="@item.NgdCateId" class="btn btn-info btn-sm ">Xem</a> |
+                    <a asp-action="NgdDelete" asp-route-ngdId="@item.NgdCateId" class="btn btn-danger btn-sm ">Xoa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
